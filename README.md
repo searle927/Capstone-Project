@@ -14,7 +14,7 @@ front-end link: https://github.com/searle927/Capstone-Project
 back-end link: 
 
 ## Project Description
-I recently got engaged and found out I'd need a wedding website, so I figured why not make one for my capstone project. The website will entail 6 pages (Welcome page, Details page, Destination page, Advice page, Registry page and RSVP page). The advice page will be full CRUD allowing people to create, edit and delete their advice to the bride and groom. Other people will also be able to make comments on the advice as well (almost turning that page into a blog).
+I recently got engaged and found out I'd need a wedding website, so I figured why not make one for my capstone project. The website will entail 6 pages (Welcome page, Details page, Destination page, Advice page, Registry page and RSVP page). The advice page will be full CRUD allowing people to create, edit and delete their advice to the bride and groom. Other people will also be able to make comments on the advice as well (almost turning that page into a blog or chat room).
 
 ## Wireframes
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app
@@ -65,7 +65,7 @@ Create seed data for Blog Portion	| H	| 2
 Set up CRUD routes	| H	| 4		
 Set up admin and user routes	| H	| 4		
 Deploy server on heroku	| H	| 3		
-Setting Up React and Components H | 1
+Setting Up React and Components | H | 1
 React Framework | H | 10
 CSS & Styling | H | 15
 NavBar & Footer | H | 2
