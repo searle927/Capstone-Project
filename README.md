@@ -19,7 +19,7 @@ I recently got engaged and found out I'd need a wedding website, so I figured wh
 ## Wireframes
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app
 
-- [Desktop WireFrames:] https://i.imgur.com/dD9pUMr.jpg https://i.imgur.com/bimD4Ul.jpg https://i.imgur.com/nHP4bee.jpg
+- [Desktop WireFrames:] (https://i.imgur.com/dD9pUMr.jpg) (https://i.imgur.com/bimD4Ul.jpg) (https://i.imgur.com/nHP4bee.jpg)
 - [Mobile Wireframes:]
 
 
