@@ -30,7 +30,8 @@ function App() {
 
 const Home = () => (
   <div>
-    <h1>Home Page</h1>
+    <h1 className="title">Ryan and Shaina</h1>
+    <h3 className="date">October 23rd, 2021 | The Royalton, Antigua </h3>
   </div>
 )
 
