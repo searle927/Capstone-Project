@@ -29,10 +29,12 @@ function App() {
 }
 
 const Home = () => (
-  <div>
+  <container className="container.">
+  <div className="shai">
     <h1 className="title">Ryan and Shaina</h1>
     <h3 className="date">October 23rd, 2021 | The Royalton, Antigua </h3>
   </div>
+  </container>
 )
 
 export default App;

@@ -1,0 +1,31 @@
+.myForm {
+    text-align: left;
+    margin-left: 20px;
+}
+.myList {
+    text-align: left;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-bottom: 10px;
+    border: solid black 2px;
+}
+.advice {
+    text-align: left;
+    margin: 0px;
+}
+.name {
+    text-align: left;
+    margin: 0px;
+}
+.formField {
+    margin-bottom: 15px;
+}
+.myListButton {
+
+}
+h2 {
+    text-align: center;
+}
+.yes {
+    color: green;
+}
