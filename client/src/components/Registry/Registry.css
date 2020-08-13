@@ -1,6 +1,40 @@
-.registry {
-    background-color: blue;
+
+.tygifts {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 0px;
+    padding-top: 10px;
 }
-img {
-    background-color: blue;
+.registrylist{
+    text-align: center;
+}
+.amazon {
+    height: 40px;
+    width: 45vw;
+    margin-bottom: 35px;
+}
+.potterybarn {
+    height: 60px;
+    width: 45vw;
+    margin-bottom: 35px;
+}
+.williamssonoma {
+    height: 70px;
+    width: 45vw;
+    margin-bottom: 35px;
+}
+.crateandbarrel {
+    height: 40px;
+    width: 45vw; 
+    margin-bottom: 35px;
+}
+.target {
+    height: 80px;
+    width: 30vw;
+    margin-bottom: 35px;
+}
+.nordstrom {
+    height: 40px;
+    width: 45vw;
+    margin-bottom: 35px;
 }
