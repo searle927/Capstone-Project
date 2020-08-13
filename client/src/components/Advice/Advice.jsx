@@ -87,13 +87,13 @@ class Advice extends Component {
             {datas.map((data, i) =>
               <li key={i} className="myList">
                 <div className='yes'>
-                {data.name}:<br /> 
+                Name: {data.name}
                 </div>
                 <div className='no'>
-                {data.advice}<br /><br />
+                 Advice: {data.advice} <br /><br />
                 </div>
-                <button onClick={()=>this.fRemove(i)} className="myListButton">remove </button>
-                <button onClick={()=>this.fEdit(i)} className="myListButton">edit </button>
+                  <button onClick={()=>this.fRemove(i)} className="myListButton">remove </button>
+                  <button onClick={()=>this.fEdit(i)} className="myListButton">edit </button>
               </li>
             )}
           </pre>
