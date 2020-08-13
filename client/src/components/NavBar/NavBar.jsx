@@ -5,7 +5,7 @@ import './NavBar.css'
 function NavBar() {
     return (
         <div className="Nav">
-          <h2>R+S Wedding</h2>
+          <h2 className='rslogo'>R+S Wedding</h2>
           <nav>
             <ul>
               <li>
