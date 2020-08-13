@@ -18,7 +18,7 @@ class Advice extends Component {
       this.refs.name.focus();
     }
   
-    fSubmit = (e) =>{
+    Submit = (e) =>{
       e.preventDefault();
       console.log('try');
   
@@ -46,7 +46,7 @@ class Advice extends Component {
       this.refs.name.focus();
     }
   
-    fRemove = (i) => {
+    Remove = (i) => {
       let datas = this.state.datas;
       datas.splice(i,1);
       this.setState({
@@ -57,7 +57,7 @@ class Advice extends Component {
       this.refs.name.focus();
     }
   
-    fEdit = (i) => {
+    Edit = (i) => {
       let data = this.state.datas[i];
       this.refs.name.value = data.name;
       this.refs.advice.value = data.advice;
@@ -81,7 +81,7 @@ class Advice extends Component {
             
             <label><p className="advice">Advice:</p></label>
             <input type="text" ref="advice" placeholder="your advice" className="formField" /><br />
-            <button onClick={(e)=>this.fSubmit(e)} className="myButton">submit </button>
+            <button onClick={(e)=>this.Submit(e)} className="myButton">submit </button>
           </form>
           <pre>
             {datas.map((data, i) =>
@@ -92,8 +92,8 @@ class Advice extends Component {
                 <div className='no'>
                  Advice: {data.advice} <br /><br />
                 </div>
-                  <button onClick={()=>this.fRemove(i)} className="myListButton">remove </button>
-                  <button onClick={()=>this.fEdit(i)} className="myListButton">edit </button>
+                  <button onClick={()=>this.Remove(i)} className="myListButton">remove </button>
+                  <button onClick={()=>this.Edit(i)} className="myListButton">edit </button>
               </li>
             )}
           </pre>
