@@ -1,5 +1,7 @@
 import React from 'react';
-import Email from './Email'
+import Email from './Email';
+
+import emailjs from 'emailjs-com';
 
 class Form extends React.Component {
   

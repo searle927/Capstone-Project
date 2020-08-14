@@ -83,7 +83,7 @@ state = {
 //RETURN
   return (
   <div className="App">
-
+      {/* This shows the guestlist toggle */}
     <div className="guests-section">
       <div>
         <p onClick={this.toggle}> Guest List {this.state.toggleIcon}</p>
@@ -91,6 +91,7 @@ state = {
       </div>
     </div>
 
+    {/* This shows the actual rsvp form */}
     <div className="color-section">
       {view}
     </div>
