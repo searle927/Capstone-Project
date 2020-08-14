@@ -1,4 +1,5 @@
 import React from 'react';
+import Email from './Email'
 
 class Form extends React.Component {
   
@@ -36,6 +37,8 @@ class Form extends React.Component {
          onChange={e => this.setState({ name: e.target.value})}/>
       </label>
         <br /><br />
+
+    <Email /><br />
 
      {/* RSVP */}
      <label>
