@@ -17,16 +17,16 @@ state = {
 
 
 //Saves the users entry as a pending invite,validates
-  onSubmit(name, dietaryRequirements) {
+  onSubmit(name, foodOptions) {
     console.log(name)
-    if (name === undefined || dietaryRequirements === undefined) {
+    if (name === undefined || foodOptions === undefined) {
       console.log("error")
       this.setState({errorMessage: 'Please fill all fields'})
     } else {
 
     let pendingRsvp = []
     pendingRsvp.name = name;
-    pendingRsvp.dietaryRequirements = dietaryRequirements;
+    pendingRsvp.foodOptions = foodOptions;
     this.setState({ pendingRsvp: pendingRsvp, showConfirmScreen: true });
    }
   };
@@ -37,7 +37,7 @@ state = {
     let rsvps = [...this.state.rsvps]
     let newRsvp = {}
     newRsvp.name = this.state.pendingRsvp.name;
-    newRsvp.dietaryRequirements = this.state.pendingRsvp.dietaryRequirements;
+    newRsvp.foodOptions = this.state.pendingRsvp.foodOptions;
     rsvps.push(newRsvp);
     this.setState ({ rsvps: rsvps, showConfirmScreen: false, errorMessage: '' })
   }
@@ -55,12 +55,12 @@ state = {
   let view;
   if (this.state.showConfirmScreen === false) {
       view = <Form
-      showConfirmScreen={(name, dietaryRequirements) => this.onSubmit(name, dietaryRequirements)}
+      showConfirmScreen={(name, foodOptions) => this.onSubmit(name, foodOptions)}
       errorMessage={this.state.errorMessage}/>
   } else {
       view = <Confirm 
       name={this.state.pendingRsvp.name}
-      dietaryRequirements={this.state.pendingRsvp.dietaryRequirements}
+      foodOptions={this.state.pendingRsvp.foodOptions}
       onConfirm={this.onConfirm}
       onEdit={() => this.setState ({ showConfirmScreen: false, errorMessage: '' })}/>
   }
@@ -71,7 +71,7 @@ state = {
   if (this.state.toggleRsvps === true && this.state.rsvps.length <= 0) {
         rsvps = <div><p>No guests so far</p></div>
       } else if (this.state.toggleRsvps === true) {
-        rsvps = <div> {this.state.rsvps.map((r) => { return <li>{r.name}, {r.dietaryRequirements}</li> })} </div>
+        rsvps = <div> {this.state.rsvps.map((r) => { return <li>{r.name}, {r.foodOptions}</li> })} </div>
     } else {
   //else nothing is rendered as section is not toggled
   }

@@ -9,7 +9,11 @@ class Form extends React.Component {
  // has been passed in from from the parent via props
   nextCicked = e => {
     e.preventDefault();
-    this.props.showConfirmScreen(this.state.name, this.state.dietaryRequirements);
+    this.props.showConfirmScreen(
+        this.state.name, 
+        this.state.foodOptions,
+        this.state.guestNum
+        );
   }
 
   render() {
@@ -40,12 +44,29 @@ class Form extends React.Component {
           <br />
           <select 
           className="textfield"
-          onChange={e => this.setState({ dietaryRequirements: e.target.value})}>
+          onChange={e => this.setState({ foodOptions: e.target.value})}>
               <option value="" disabled selected>Select</option>
               <option value="chicken">Chicken</option>
               <option value="fish">Fish</option>
               <option value="beef">Beef</option>
-              <option value="vegan">I dont eat meat!</option>
+              <option value="vegan">Vegan</option>
+          </select>
+      <br /><br />
+      </label>
+
+
+     {/* Are you bringing a plus one? */}
+      <label>
+      Are you bringing a plus 1?:
+          <br />
+          <select 
+          className="textfield"
+          onChange={e => this.setState({ guestNum: e.target.value})}>
+              <option value="" disabled selected>Select</option>
+              <option value="none">None</option>
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
           </select>
       <br /><br />
       </label>

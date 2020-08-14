@@ -8,7 +8,8 @@ const Confirm = ( props ) => {
 
   <h2>Confirm RSVP Details</h2>
   <p>Name: {props.name}</p>
-  <p>Dietary Requirements: {props.dietaryRequirements}</p>
+  <p>Food Options: {props.foodOptions}</p>
+  <p>Number of Guests: {props.guestNum}</p>
 
   <button 
      className="secondarybtn"
