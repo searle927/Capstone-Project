@@ -8,7 +8,7 @@ import './RSVP.css';
 class RSVP extends Component {
   
 state = {
-  showConfirmScreen: false,
+  showConfirm: false,
   toggleRsvps: false,
   toggleIcon: "⊕",
   rsvps: [],
@@ -27,7 +27,7 @@ state = {
     let pendingRsvp = []
     pendingRsvp.name = name;
     pendingRsvp.foodOptions = foodOptions;
-    this.setState({ pendingRsvp: pendingRsvp, showConfirmScreen: true });
+    this.setState({ pendingRsvp: pendingRsvp, showConfirm: true });
    }
   };
 
@@ -38,8 +38,9 @@ state = {
     let newRsvp = {}
     newRsvp.name = this.state.pendingRsvp.name;
     newRsvp.foodOptions = this.state.pendingRsvp.foodOptions;
+    newRsvp.guestNum = this.state.pendingRsvp.guestNum;
     rsvps.push(newRsvp);
-    this.setState ({ rsvps: rsvps, showConfirmScreen: false, errorMessage: '' })
+    this.setState ({ rsvps: rsvps, showConfirm: false, errorMessage: '' })
   }
 
 
@@ -53,16 +54,17 @@ state = {
   render() {
 //Conditonal rendering to show correct screen
   let view;
-  if (this.state.showConfirmScreen === false) {
+  if (this.state.showConfirm === false) {
       view = <Form
-      showConfirmScreen={(name, foodOptions) => this.onSubmit(name, foodOptions)}
+      showConfirm={(name, foodOptions, guestNum) => this.onSubmit(name, foodOptions, guestNum)}
       errorMessage={this.state.errorMessage}/>
   } else {
       view = <Confirm 
       name={this.state.pendingRsvp.name}
       foodOptions={this.state.pendingRsvp.foodOptions}
+      guestNum={this.state.pendingRsvp.guestNum}
       onConfirm={this.onConfirm}
-      onEdit={() => this.setState ({ showConfirmScreen: false, errorMessage: '' })}/>
+      onEdit={() => this.setState ({ showConfirm: false, errorMessage: '' })}/>
   }
 
 //Note: The following should really be its own component!!! Refractor
@@ -71,7 +73,7 @@ state = {
   if (this.state.toggleRsvps === true && this.state.rsvps.length <= 0) {
         rsvps = <div><p>No guests so far</p></div>
       } else if (this.state.toggleRsvps === true) {
-        rsvps = <div> {this.state.rsvps.map((r) => { return <li>{r.name}, {r.foodOptions}</li> })} </div>
+      rsvps = <div> {this.state.rsvps.map((r) => { return <li>{r.name}, {r.foodOptions}, {r.guestNum}</li> })} </div>
     } else {
   //else nothing is rendered as section is not toggled
   }
@@ -80,12 +82,6 @@ state = {
 //RETURN
   return (
   <div className="App">
-     
-    {/* <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h1>30 days of React</h1>
-      <h2>Day Nineteen / Party RSVP</h2>
-    </header> */}
 
     <div className="guests-section">
       <div>
@@ -94,7 +90,7 @@ state = {
       </div>
     </div>
 
-    <div className="colour-section">
+    <div className="color-section">
       {view}
     </div>
 

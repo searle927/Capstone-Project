@@ -13,7 +13,7 @@ const Confirm = ( props ) => {
 
   <button 
      className="secondarybtn"
-     onClick={props.onEdit}>✕
+     onClick={props.onEdit}>Edit
   </button>
  
   <button 

@@ -9,7 +9,7 @@ class Form extends React.Component {
  // has been passed in from from the parent via props
   nextCicked = e => {
     e.preventDefault();
-    this.props.showConfirmScreen(
+    this.props.showConfirm(
         this.state.name, 
         this.state.foodOptions,
         this.state.guestNum
@@ -55,20 +55,14 @@ class Form extends React.Component {
       </label>
 
 
-     {/* Are you bringing a plus one? */}
-      <label>
-      Are you bringing a plus 1?:
-          <br />
-          <select 
-          className="textfield"
-          onChange={e => this.setState({ guestNum: e.target.value})}>
-              <option value="" disabled selected>Select</option>
-              <option value="none">None</option>
-              <option value="one">1</option>
-              <option value="two">2</option>
-              <option value="three">3</option>
-          </select>
-      <br /><br />
+     {/* Number of Guests */}
+     <label>
+      Number of Guests:
+        <br />
+        <input
+         type="text" name="guestamt"
+         className="textfield"
+         onChange={e => this.setState({ guestNum: e.target.value})}/>
       </label>
 
           <button 
