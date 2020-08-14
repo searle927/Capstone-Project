@@ -11,8 +11,8 @@ class Form extends React.Component {
     e.preventDefault();
     this.props.showConfirm(
         this.state.name, 
-        this.state.foodOptions,
-        this.state.guestNum
+        this.state.rsvpAnswer,
+        this.state.foodOptions
         );
   }
 
@@ -35,10 +35,26 @@ class Form extends React.Component {
          className="textfield"
          onChange={e => this.setState({ name: e.target.value})}/>
       </label>
+        <br /><br />
+
+     {/* RSVP */}
+     <label>
+      RSVP:
+          <br />
+          <select 
+          className="textfield"
+          onChange={e => this.setState({ rsvpAnswer: e.target.value})}>
+              <option value="" disabled selected>Select</option>
+              <option value="Accepted">Delightfully Accepts</option>
+              <option value="Declined">Regretfully Declines</option>
+          </select>
+      </label>
 
 
-  {/* Select Food Preference Dropdown */}
-      <br /><br />
+
+
+       {/* Select Food Preference Dropdown */}
+       <br /><br />
       <label>
       Please choose a meal:
           <br />
@@ -46,23 +62,13 @@ class Form extends React.Component {
           className="textfield"
           onChange={e => this.setState({ foodOptions: e.target.value})}>
               <option value="" disabled selected>Select</option>
-              <option value="chicken">Chicken</option>
-              <option value="fish">Fish</option>
-              <option value="beef">Beef</option>
-              <option value="vegan">Vegan</option>
+              <option value="Chicken">Chicken</option>
+              <option value="Fish">Fish</option>
+              <option value="Beef">Beef</option>
+              <option value="Vegan">Vegan</option>
+              <option value="Cannot Make It">Cannot Make It</option>
           </select>
       <br /><br />
-      </label>
-
-
-     {/* Number of Guests */}
-     <label>
-      Number of Guests:
-        <br />
-        <input
-         type="text" name="guestamt"
-         className="textfield"
-         onChange={e => this.setState({ guestNum: e.target.value})}/>
       </label>
 
           <button 

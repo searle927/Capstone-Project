@@ -92,8 +92,8 @@ class Advice extends Component {
                 <div className='no'>
                  Advice: {data.advice} <br /><br />
                 </div>
-                  <button onClick={()=>this.Remove(i)} className="myListButton">remove </button>
-                  <button onClick={()=>this.Edit(i)} className="myListButton">edit </button>
+                  <button onClick={()=>this.Remove(i)} className="myListButton">Remove </button>
+                  <button onClick={()=>this.Edit(i)} className="myListButton">Edit </button>
               </li>
             )}
           </pre>
