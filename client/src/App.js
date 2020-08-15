@@ -6,15 +6,30 @@ import Destination from './components/Destination/Destination';
 import Advice from './components/Advice/Advice';
 import Registry from './components/Registry/Registry';
 import RSVP from './components/RSVP/RSVP';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import Beach from './components/Video/beach.mp4'
+
 
 function App() {
   return (
     <Router>
     <div className="App">
-      <NavBar />
-      
+{/*       
+    <video autoplay loop muted
+    style={{
+      position: "absolute",
+      width: "100%",
+      // left: "50%",
+      // top: "50%",
+      height: "100%",
+      // transform: "-50% -50%",
+      zIndex: "-10"
+    }}
+    >
+      <source src={Beach} type="video/mp4" />
+    </video> */}
 
+      <NavBar />
       <Switch>
           <Route path="/" exact component={Home} />
           <Route exact path="/details" component={Details} />

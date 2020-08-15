@@ -82,7 +82,7 @@ state = {
 
 //RETURN
   return (
-  <div className="App">
+  <div className="rsvpContainer">
       {/* This shows the guestlist toggle */}
     <div className="guests-section">
       <div>

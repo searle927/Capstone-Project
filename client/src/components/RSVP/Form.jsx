@@ -1,7 +1,6 @@
 import React from 'react';
 import Email from './Email';
-
-import emailjs from 'emailjs-com';
+import * as emailjs from 'emailjs-com';
 
 class Form extends React.Component {
   
@@ -39,6 +38,27 @@ class Form extends React.Component {
          onChange={e => this.setState({ name: e.target.value})}/>
       </label>
         <br /><br />
+
+
+{/* code to send form */}
+      {/* e.preventDefault();
+      emailjs
+        .sendForm(
+          "gmail",
+          "rsvp_template",
+          "e.target",
+          "user_wmCofciMoExJ8lhZagefO"
+        )
+        .then()
+        .catch()
+        this.setState({
+          title: "",
+          email: "",
+          rsvp: "",
+          food option: ""
+        });
+       */}
+
 
     <Email /><br />
 

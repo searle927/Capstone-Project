@@ -1,3 +1,12 @@
+.adviceContainer {
+    padding-top: 20vh;
+    background-image: url("https://i.imgur.com/75YyMKy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+}
+
 .myForm {
     text-align: left;
     margin-left: 20px;

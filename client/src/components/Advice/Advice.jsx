@@ -73,7 +73,7 @@ class Advice extends Component {
     render() {
       let datas = this.state.datas;
       return (
-        <div className="App">
+        <div className="adviceContainer">
           <h2>{this.state.title}</h2>
           <form ref="myForm" className="myForm">
             <label><p className="name">Name:</p></label>

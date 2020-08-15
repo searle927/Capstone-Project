@@ -1,4 +1,11 @@
-
+.registry {
+    padding-top: 20vh;
+    background-image: url("https://i.imgur.com/t0TQPh1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+}
 .tygifts {
     margin-left: 2em;
     margin-right: 2em;
