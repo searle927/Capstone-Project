@@ -83,20 +83,22 @@ state = {
 //RETURN
   return (
   <div className="rsvpContainer">
-      {/* This shows the guestlist toggle */}
-    <div className="guests-section">
-      <div>
-        <p onClick={this.toggle}> Guest List {this.state.toggleIcon}</p>
-        <p> {rsvps} </p>
-      </div>
-    </div>
+    {/* <div className="gallery"> */}
 
     {/* This shows the actual rsvp form */}
     <div className="color-section">
       {view}
     </div>
 
+     {/* This shows the guestlist toggle */}
+     <div className="guests-section">
+      <div>
+        <p onClick={this.toggle}> Guest List {this.state.toggleIcon}</p>
+        <p> {rsvps} </p>
+      </div>
     </div>
+    </div>
+    // </div>
 
   );
  }

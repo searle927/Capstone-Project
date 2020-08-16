@@ -46,7 +46,7 @@ function App() {
 const Home = () => (
   <container className="container.">
   <div className="wedding">
-    <h1 className="title">Ryan and Shaina</h1>
+    <h1 className="title">Ryan and Shaina's Wedding</h1>
     <h3 className="date">October 23rd, 2021 <br /> The Royalton, Antigua </h3>
   </div>
   </container>

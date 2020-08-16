@@ -7,3 +7,8 @@
   background-size: cover;
   height:100vh;
 }
+.destination {
+  font-family: 'Great Vibes', cursive;
+  font-size: 75px;
+  font-weight: lighter;
+}
