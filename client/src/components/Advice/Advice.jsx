@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 import './Advice.css'
+
 
 
 class Advice extends Component {
@@ -9,14 +10,27 @@ class Advice extends Component {
       this.state={
         title: 'Send all your marriage and wedding advice here!',
         act: 0,
-        index: '',
-        datas: []
+        // index: 'hi',
+        datas: [],
+        isLoaded: false,
       }
     } 
-  
-    componentDidMount(){
-      this.refs.name.focus();
+
+    componentDidMount() {
+
+      fetch('http://localhost:3000/advices')
+        .then(res => res.json())
+        .then(json => {
+          this.setState({
+            isLoaded: true,
+            datas: json,
+          })
+        });
     }
+  
+    // componentDidMount(){
+    //   this.refs.name.focus();
+    // }
   
     Submit = (e) =>{
       e.preventDefault();

@@ -6,6 +6,7 @@ function NavBar() {
     return (
         <div className="Nav">
           <h2 className='rslogo'>R+S Wedding</h2>
+          <Link to="/">R+S Wedding</Link>
           <nav>
             <ul>
               <li>
