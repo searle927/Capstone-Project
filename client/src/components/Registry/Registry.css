@@ -12,7 +12,7 @@
     margin-top: 0px;
     margin-bottom: 2em;
     padding-top: 10px;
-    font-size: 33px;
+    font-size: 25px;
     font-family: 'Courgette', cursive;
     font-weight: 500;
 }
@@ -20,32 +20,32 @@
     text-align: center;
 }
 .amazon {
-    height: 40px;
-    width: 200px;
-    margin-bottom: 5em;
+    /* height: 40px; */
+    width: 130px;
+    margin-bottom: 3em;
 }
 .potterybarn {
     height: 60px;
-    width: 200px;
-    margin-bottom: 5em;
+    width: 130px;
+    margin-bottom: 3em;
 }
 .williamssonoma {
-    height: 70px;
-    width: 200px;
-    margin-bottom: 5em;
+    /* height: 70px; */
+    width: 130px;
+    margin-bottom: 3em;
 }
 .crateandbarrel {
-    height: 40px;
-    width: 200px;
-    margin-bottom: 5em;
+    /* height: 40px; */
+    width: 140px;
+    margin-bottom: 3em;
 }
 .target {
-    height: 120px;
-    width: 150px;
-    margin-bottom: 5em;
+    /* height: 120px; */
+    width: 130px;
+    margin-bottom: 3em;
 }
 .nordstrom {
-    height: 30px;
-    width: 200px;
-    margin-bottom: 5em;
+    /* height: px; */
+    width: 130px;
+    margin-bottom: 3em;
 }

@@ -1,21 +1,27 @@
 .wcontainer {
-    padding-top: 20vh;
+    padding-top: 25vh;
+    padding-right: 40px;
+    padding-left: 40px;
     background-image: url("https://i.imgur.com/ZG05B8b.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:100vh;
+    height: 75vh;
+    
 }
 .ws {
     text-align: center;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-family: 'Great Vibes', cursive;
     /* font-family: 'Courgette', cursive; */
-    font-size: 60px;
+    font-size: 40px;
+    margin-bottom: 0px;
 }
 .description {
     text-align: center;
     font-family: 'Courgette', cursive;
-    font-size: 30px;
+    font-size: 17px;
     font-weight: lighter;
+    margin:0px;
+    padding-bottom: 20px;
 }

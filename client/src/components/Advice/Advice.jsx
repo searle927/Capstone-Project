@@ -10,7 +10,7 @@ class Advice extends Component {
       this.state={
         title: 'Send all your marriage and wedding advice here!',
         act: 0,
-        // index: 'hi',
+        // index: '',
         datas: [],
         isLoaded: false,
       }
@@ -100,10 +100,10 @@ class Advice extends Component {
           <pre>
             {datas.map((data, i) =>
               <li key={i} className="myList">
-                <div className='yes'>
+                <div className='adName'>
                 Name: {data.name}
                 </div>
-                <div className='no'>
+                <div className='adOutput'>
                  Advice: {data.advice} <br /><br />
                 </div>
                   <button onClick={()=>this.Remove(i)} className="myListButton">Remove </button>
