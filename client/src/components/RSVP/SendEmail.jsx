@@ -16,12 +16,12 @@ function SendEmail(e) {
 
   return (
     <form className="contact-form" onSubmit={sendEmail}>
-      <input type="hidden" name="contact_number" />
+      <input type="hidden" name="name" />
       <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>RSVP</label>
+      <input type="text" name="user_email" />
+      <label>email</label>
       <input type="rsvpAnswer" name="rsvpAnswer" />
-      <label>Food Option</label>
+      <label>RSVP</label>
       <textarea name="foodOption" />
       <input type="foodOption" value="foodOption" />
     </form>

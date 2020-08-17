@@ -74,7 +74,7 @@ state = {
   if (this.state.toggleRsvps === true && this.state.rsvps.length <= 0) {
         rsvps = <div><p className="noGuest">No guests so far</p></div>
       } else if (this.state.toggleRsvps === true) {
-      rsvps = <div> {this.state.rsvps.map((r) => { return <li>• {r.name}, {r.rsvpAnswer}, {r.foodOptions}</li> })} </div>
+      rsvps = <div> {this.state.rsvps.map((r) => { return <li> {r.name}, {r.rsvpAnswer}, {r.foodOptions}</li> })} </div>
     } else {
   //else nothing is rendered as section is not toggled
   }

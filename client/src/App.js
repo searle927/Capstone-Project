@@ -8,6 +8,8 @@ import Registry from './components/Registry/Registry';
 import RSVP from './components/RSVP/RSVP';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import Beach from './components/Video/beach.mp4'
+import Footer from './components/Footer/Footer';
+// import Bootstrap from './components/Bootstrap/Bootstrap';
 
 
 function App() {
@@ -38,14 +40,17 @@ function App() {
           <Route exact path="/registry" component={Registry} />
           <Route exact path="/RSVP" component={RSVP} />
       </Switch>
+      <Footer />
     </div>
     </Router>
+    
   );
 }
 
 const Home = () => (
   <container className="container.">
   <div className="wedding">
+    {/* <Bootstrap /> */}
     <h1 className="title">Ryan and Shaina's Wedding</h1>
     <h3 className="date">October 23rd, 2021 <br /> The Royalton, Antigua </h3>
   </div>

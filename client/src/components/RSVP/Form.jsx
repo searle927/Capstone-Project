@@ -2,6 +2,19 @@ import React from 'react';
 import Email from './Email';
 import * as emailjs from 'emailjs-com';
 
+
+// function SendEmail(e) {
+//   e.preventDefault();
+
+//   emailjs.sendForm('gmail', 'rsvp_template', e.target, 'user_wmCofciMoExJ8lhZagefO')
+//     .then((result) => {
+//         console.log(result.text);
+//     }, (error) => {
+//         console.log(error.text);
+//     });
+// }
+
+
 class Form extends React.Component {
   
   state = {
@@ -9,7 +22,7 @@ class Form extends React.Component {
 
  //This func is called when you click the button
  // has been passed in from from the parent via props
-  nextCicked = e => {
+  nextClicked = e => {
     e.preventDefault();
     this.props.showConfirm(
         this.state.name, 
@@ -38,25 +51,6 @@ class Form extends React.Component {
       </label>
         <br /><br />
 
-
-{/* code to send form */}
-      {/* e.preventDefault();
-      emailjs
-        .sendForm(
-          "gmail",
-          "rsvp_template",
-          "e.target",
-          "user_wmCofciMoExJ8lhZagefO"
-        )
-        .then()
-        .catch()
-        this.setState({
-          title: "",
-          email: "",
-          rsvp: "",
-          food option: ""
-        });
-       */}
 
 
     <Email /><br />
@@ -97,7 +91,7 @@ class Form extends React.Component {
 
           <button 
           className="mainbtn"
-          onClick={e => this.nextCicked(e)}>Next</button>
+          onClick={e => this.nextClicked(e)}>Next</button>
      </form>
     </div>
 
