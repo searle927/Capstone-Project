@@ -91,13 +91,15 @@ class Advice extends Component {
           <h2>{this.state.title}</h2>
           <form ref="myForm" className="myForm">
             <label><p className="name">Name:</p></label>
+            <div>
             <input type="text" ref="name" placeholder="your name" className="nameBox" /><br />
-            
+            </div>
             <label><p className="advice">Advice:</p></label>
             <input type="text" ref="advice" placeholder="your advice" className="adviceBox" /><br />
             <button onClick={(e)=>this.Submit(e)} className="myButton">submit </button>
           </form>
-          <pre>
+          <br />
+          <div className="adBoxOutput">
             {datas.map((data, i) =>
               <li key={i} className="myList">
                 <div className='adName'>
@@ -110,7 +112,7 @@ class Advice extends Component {
                   <button onClick={()=>this.Edit(i)} className="myListButton">Edit </button>
               </li>
             )}
-          </pre>
+          </div>
         </div>
       );
     }

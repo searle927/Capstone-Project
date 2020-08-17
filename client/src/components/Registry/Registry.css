@@ -1,10 +1,11 @@
 .registry {
     /* padding-top: 20vh; */
-    background-image: url("");
+    /* background-image: url("");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     height:100vh;
+    background-color: #f3d3b8;
 }
 .tygifts {
     margin-left: 2em;

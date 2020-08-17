@@ -6,10 +6,10 @@ const Confirm = ( props ) => {
 
 <div>
 
-  <h2>Confirm RSVP Details</h2>
-  <p>Name: {props.name}</p>
-  <p>Status: {props.rsvpAnswer}</p>
-  <p>Food Options: {props.foodOptions}</p>
+  <h2 className="rsvpConfirmation">Confirm RSVP Details</h2>
+  <p className="infoConf">Name: {props.name}</p>
+  <p className="infoConf">Status: {props.rsvpAnswer}</p>
+  <p className="infoConf">Food Options: {props.foodOptions}</p>
 
   <button 
      className="secondarybtn"

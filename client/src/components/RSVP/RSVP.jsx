@@ -17,11 +17,11 @@ state = {
 
 
 //Saves the users entry as a pending invite,validates
-  onSubmit(name, foodOptions, rsvpAnswer) {
+  onSubmit(name, rsvpAnswer, foodOptions) {
     console.log(name)
     if (name === undefined || foodOptions === undefined || rsvpAnswer === undefined) {
       console.log("error")
-      this.setState({errorMessage: 'Please fill all fields'})
+      this.setState({errorMessage: 'Please fill out all fields'})
     } else {
 
     let pendingRsvp = []
@@ -72,9 +72,9 @@ state = {
 //Render and toggle the guest list conditionally
   let rsvps;
   if (this.state.toggleRsvps === true && this.state.rsvps.length <= 0) {
-        rsvps = <div><p>No guests so far</p></div>
+        rsvps = <div><p className="noGuest">No guests so far</p></div>
       } else if (this.state.toggleRsvps === true) {
-      rsvps = <div> {this.state.rsvps.map((r) => { return <li>• {r.name}, {r.foodOptions}, {r.rsvpAnswer}</li> })} </div>
+      rsvps = <div> {this.state.rsvps.map((r) => { return <li>• {r.name}, {r.rsvpAnswer}, {r.foodOptions}</li> })} </div>
     } else {
   //else nothing is rendered as section is not toggled
   }
@@ -86,14 +86,14 @@ state = {
     {/* <div className="gallery"> */}
 
     {/* This shows the actual rsvp form */}
-    <div className="color-section">
+    {/* <div className="form-section"> */}
       {view}
-    </div>
+    {/* </div> */}
 
      {/* This shows the guestlist toggle */}
      <div className="guests-section">
       <div>
-        <p onClick={this.toggle}> Guest List {this.state.toggleIcon}</p>
+        <p onClick={this.toggle} className="guestList"> Guest List {this.state.toggleIcon}</p>
         <p> {rsvps} </p>
       </div>
     </div>

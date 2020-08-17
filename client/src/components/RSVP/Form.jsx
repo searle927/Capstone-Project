@@ -25,8 +25,7 @@ class Form extends React.Component {
   <p>{this.props.errorMessage}</p>
 
   {/* Form */}
-   <form
-    className="form">    
+   <form className="form">    
 
   {/* Enter Name Textfield */}
       <label>
@@ -34,7 +33,7 @@ class Form extends React.Component {
         <br />
         <input
          type="text" name="name"
-         className="textfield"
+         className="input"
          onChange={e => this.setState({ name: e.target.value})}/>
       </label>
         <br /><br />
@@ -67,7 +66,7 @@ class Form extends React.Component {
       RSVP:
           <br />
           <select 
-          className="textfield"
+          className="dropdown"
           onChange={e => this.setState({ rsvpAnswer: e.target.value})}>
               <option value="" disabled selected>Select</option>
               <option value="Accepted">Delightfully Accepts</option>
@@ -84,7 +83,7 @@ class Form extends React.Component {
       Please choose a meal:
           <br />
           <select 
-          className="textfield"
+          className="dropdown"
           onChange={e => this.setState({ foodOptions: e.target.value})}>
               <option value="" disabled selected>Select</option>
               <option value="Chicken">Chicken</option>
