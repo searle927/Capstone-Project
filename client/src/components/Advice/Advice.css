@@ -1,11 +1,11 @@
 .adviceContainer {
     padding-top: 0px;
-    background-color: #f3d3b8;
+    background-color: #4F7986;
     /* background-image: url("");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
-    height:100vh;
+    height: 300vh;
     font-family: 'Courgette', cursive;
 
 }   
@@ -20,6 +20,9 @@
     margin-right:20px;
     margin-bottom: 10px;
     border: solid black 2px;
+    background-color: white;
+    opacity: 70%;
+    border-radius: 15px;
     /* width: 88vw; */
 }
 .advice {
@@ -34,15 +37,37 @@
 .nameBox {
     margin-bottom: 15px;
     width: 87.5vw;
+    border: solid black 2px;
 }
 .adviceBox {
     margin-bottom: 15px;
     width: 87.5vw;
     height: 20px;
+    border: solid black 2px;
 }
-.myListButton {
+.myListButton, .myButton {
     margin-bottom: 10px;
-    margin-left: 6px;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 15px;
+    background-color: #c9d1c8;
+    color: #211f30;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px
+}
+.myButton {
+    margin-bottom: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 0px;
+    background-color: #c9d1c8;
+    color: #211f30;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px
 }
 h2 {
     text-align: center;
@@ -52,15 +77,18 @@ h2 {
     padding-top: 10px;
 }
 .adName {
-    color: black;
-    padding-left: 6px;
-    margin-bottom: 10px;
+    color: #211f30;
+    padding-left: 15px;
+    margin: 10px 0px;
     font-weight: bold;
     font-family: 'Courgette', cursive;
+    font-size: 25px;
 }
 .adOutput {
-    padding: 0px 10px;
+    padding: 0px 15px;
+    color: #211f30;
+    font-size: 20px
 }
 .adBoxOutput {
-    background-color: #f3d3b8;
+    background-color: #4F7986;
 }
