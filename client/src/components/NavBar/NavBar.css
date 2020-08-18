@@ -5,12 +5,16 @@
     justify-content: space-between;
     align-items: center;
     width: 110px;
+    margin-top: 0px;
 }
 .header {
     display: flex;
     justify-content: flex-start;
     background-color: #4F7986;
-    height: 100px;
+    height: 80px;
+}
+.nav {
+    margin-top: 0px;
 }
 h2 {
     margin-left: 20px;
@@ -26,11 +30,14 @@ ul {
 a {
     color: black;
     text-decoration: none;
+    margin-top: 0px;
 }
 a:hover {
     text-decoration: underline black;
 } 
-
+#home.nav, #details.nav, #destination.nav, #advice.nav, #registry.nav, #rsvp.nav {
+    margin-top: 0px;
+}
 .nav-items {
     width: 0px;
     height: 0px;
@@ -47,7 +54,8 @@ a:hover {
     justify-content: center;
     transition: all 2000 ease-in-out;
     cursor: pointer;
-    margin-left: 130px
+    margin-left: 50vw;
+    padding-top: 12px;
 }
 
 .hamburger-patty {
@@ -120,6 +128,9 @@ a:hover {
     font-size: 20px;
     padding-left: 10px;
     text-align: center
+}
+#nav-zero.nav-items, #nav-one.nav-items, #nav-two.nav-items, #nav-three.nav-items, #nav-four.nav-items, #nav-five.nav-items{
+    padding-top:0px;
 }
 
 

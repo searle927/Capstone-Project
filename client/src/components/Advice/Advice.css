@@ -1,15 +1,9 @@
 .adviceContainer {
     padding-top: 0px;
     background-color: #4F7986;
-    /* background-image: url("");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     height: auto;
     font-family: 'Courgette', cursive;
-
 }   
-
 .myForm {
     text-align: left;
     margin-left: 20px;
@@ -22,7 +16,6 @@
     opacity: 70%;
     border-radius: 15px;
     box-shadow: 0px 12px 18px -6px black;
-    /* width: 88vw; */
 }
 .advice {
     text-align: left;
