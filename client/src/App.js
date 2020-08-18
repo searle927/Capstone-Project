@@ -7,30 +7,16 @@ import Advice from './components/Advice/Advice';
 import Registry from './components/Registry/Registry';
 import RSVP from './components/RSVP/RSVP';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import Beach from './components/Video/beach.mp4'
 import Footer from './components/Footer/Footer';
+// import SendEmail from './components/RSVP/SendEmail';
 // import Bootstrap from './components/Bootstrap/Bootstrap';
+
 
 
 function App() {
   return (
     <Router>
     <div className="App">
-{/*       
-    <video autoplay loop muted
-    style={{
-      position: "absolute",
-      width: "100%",
-      // left: "50%",
-      // top: "50%",
-      height: "100%",
-      // transform: "-50% -50%",
-      zIndex: "-10"
-    }}
-    >
-      <source src={Beach} type="video/mp4" />
-    </video> */}
-
       <NavBar />
       <Switch>
           <Route path="/" exact component={Home} />
@@ -49,10 +35,15 @@ function App() {
 
 const Home = () => (
   <container className="container.">
+   <img src="https://i.imgur.com/bZyKATO.png?1" className="banner" alt="engagement-photo" />
+        
   <div className="wedding">
-    {/* <Bootstrap /> */}
     <h1 className="title">Ryan and Shaina's Wedding</h1>
     <h3 className="date">October 23rd, 2021 <br /> The Royalton, Antigua </h3>
+    <p className="para">Dear friends and relatives,<br /><br />
+    We are delighted to share in our joy with you, this amazingly beautiful and special moment of our lives, the celebration of our love!
+    <br /><br />In order to prepare you for the Big Day, we have created this site whereby all information and most important tips will be shared with you. <br />
+    We will see you in Antigua!</p>
   </div>
   </container>
 )

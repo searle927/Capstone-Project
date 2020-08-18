@@ -1,5 +1,5 @@
 .wcontainer {
-    padding-top: 25vh;
+    /* padding-top: 25vh; */
     padding-right: 40px;
     padding-left: 40px;
     background-color: #4F7986;
@@ -26,5 +26,5 @@
     font-weight: lighter;
     margin:0px;
     padding-bottom: 20px;
-    color: #f3d3b8;
+    color:  #c9d1c8;
 }

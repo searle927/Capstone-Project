@@ -5,7 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
-    height: 220vh;
+    height: auto;
     font-family: 'Courgette', cursive;
 
 }   
@@ -16,9 +16,7 @@
 }
 .myList {
     text-align: left;
-    margin-left: 20px;
-    margin-right:20px;
-    margin-top: 15px;
+    margin: 20px 15px 0px 15px;
     border: solid black 2px;
     background-color: white;
     opacity: 70%;

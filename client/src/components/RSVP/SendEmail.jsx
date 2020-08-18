@@ -14,17 +14,31 @@ function SendEmail(e) {
       });
   }
 
-  return (
-    <form className="contact-form" onSubmit={sendEmail}>
-      <input type="hidden" name="name" />
-      <label>Name</label>
-      <input type="text" name="user_email" />
-      <label>email</label>
-      <input type="rsvpAnswer" name="rsvpAnswer" />
-      <label>RSVP</label>
-      <textarea name="foodOption" />
-      <input type="foodOption" value="foodOption" />
-    </form>
-  );
+  
+  return(
+    <div>
+      <div className="container">
+        <form onSubmit={sendEmail}>
+          <div className="row pt-5 ax-auto">
+            <div className="col-8 form-group ex-auto">
+              <input type="text" className="form-control" placeholder="Name" name="name"/>
+            </div>
+            <div className="col-8 form-group pt-2 ex-auto">
+              <input type="text" className="form-control" placeholder="Email Address" name="email"/>
+            </div>
+            <div className="col-8 form-group ex-auto">
+              <input type="text" className="form-control" placeholder="Name" name="name"/>
+            </div>
+            <div className="col-8 form-group ex-auto">
+              <input type="text" className="form-control" placeholder="Name" name="name"/>
+            </div>
+            <div className="col-8 form-group ex-auto">
+              <input type="text" className="form-control" placeholder="Name" name="name"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  )
 }
 

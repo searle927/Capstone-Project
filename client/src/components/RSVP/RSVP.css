@@ -1,14 +1,8 @@
 .rsvpContainer {
-    /* padding-top: 20vh; */
-    /* background-image: url("https://i.imgur.com/PHImJUK.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   background-color: #4F7986;
   height:100vh;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  /* padding: 10px; */
   padding-left: 15px
 }
 .guestList {
@@ -18,17 +12,16 @@
   font-family: 'Courgette', cursive;
   margin: 25px 0px;
 }
-.form-section {
-  /* height: 40vh; */
-}
 .dropdown {
-  width: 26em;
+  width: 88vw;
   height: 25px;
   margin: 5px, 30px;
+  border: solid black 2px;
 }
 input {
-  width: 25em;
+  width: 87vw;
   height: 20px;
+  border: solid black 2px;
 }
 li {
   color: #c9d1c8;
