@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 100%;
+}
+.timer-container {
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+.timer {
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex;
+    flex: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:50px;
+    padding-top: 50px;
+    width: 100px;
+    height: 100px;
+}
+.timer div:first-child {
+    text-align: center;
+}
+.timer-icon {
+    font-size: 20px;
+}
+.countdown {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.cdpar {
+    color: white;
+}
+.timer div:last-child {
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 20px;
+    text-align: center;
+}

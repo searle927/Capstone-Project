@@ -139,7 +139,18 @@ a:hover {
       .header {
           display: flex;
           justify-content: flex-start;
+          width: 100vw;
       }
+      .logo {
+          font-size: 23px
+      }
+      #home.nav, #details.nav, #destination.nav, #advice.nav, #registry.nav, #rsvp.nav {
+        margin-top: 0px;
+    }
+    #nav-two.nav-items, #nav-zero.nav-items, #nav-one.nav-items, #nav-four.nav-items, #nav-five.nav-items, #nav-three.nav-items {
+        font-size: 19px;
+        color:  black;
+    }
      .hamburger-btn {
          visibility: hidden;
          width: 0px;

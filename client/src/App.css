@@ -1,24 +1,19 @@
 .App {
   background-color: #4F7986;
+  height: 100%;
 }
 .banner {
-  height:auto;
+  height: auto;
   width: 100%;
   text-align: center;
+  display: block;
 }
  .wedding {
-  /* background-image: url("https://i.imgur.com/ZG05B8b.jpg");
-  /* https://i.imgur.com/bZyKATO.png?1 */
-  /* background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;
-  height: 80vh;
-  padding-top: 20vh;  */
   background-color: #4F7986;;
 } 
 .title {
   text-align: center;
-  padding-top: 0px;
+  padding-top: 20px;
   font-family: 'Great Vibes', cursive;
   font-size: 45px;
   font-weight: 500;
@@ -33,4 +28,25 @@
    font-size: 17px;
    text-align: center;
    margin: 0px 25px;
+ }
+
+ @media screen and (min-width:768px) {
+   .para {
+     padding: 0px 100px;
+     font-size: 1.42em;
+   }
+   .title {
+     font-size: 5em;
+     margin: 0px 20px;
+   }
+   .date {
+     font-size: 2em;
+   }
+   .banner {
+     max-width: 60%;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+   }
  }

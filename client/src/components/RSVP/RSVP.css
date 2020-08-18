@@ -61,11 +61,24 @@ p {
   font-family: 'Overpass', sans-serif;
   font-size: 16px
 }
-/* button {
-  margi-left: 10px
-} */
 .noGuest {
   color: #c9d1c8;
   font-family: 'Courgette', cursive;
   font-size: 25px;
+}
+
+@media screen and (min-width:768px) {
+  .rsvpContainer {
+    display: flex;
+    height: 83vh;
+  }
+  .dropdown {
+    width: 60vw;
+  }
+  input {
+    width: 59vw;
+  }
+  .guests-section {
+    margin-left: 65px;
+  }
 }

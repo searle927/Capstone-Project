@@ -1,12 +1,9 @@
 .registry {
-    height: auto;
+    height: 83vh;
     background-color: #4F7986;
 }
 .tygifts {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-top: 0px;
-    margin-bottom: 2em;
+    margin: 0em 2em 2em 2em;
     padding-top: 10px;
     font-size: 25px;
     font-family: 'Courgette', cursive;
@@ -40,4 +37,12 @@
 .nordstrom {
     width: 130px;
     margin-bottom: 3em;
+}
+
+@media screen and (min-width:768px){
+    .tygifts {
+        font-size: 2em;
+        margin: 1em 3em;
+        text-align: center;
+    }
 }
