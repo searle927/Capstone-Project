@@ -35,16 +35,18 @@
         width: 30%;
         margin-left:10px;
         text-align:justify;
+        border: solid transparent 3px;
+        height: 400px;
+        text-align: center;
     }
     .icons {
         height: 5em;
-        padding-left:5em;
+        padding: 0;
     }
 }
 
 @media screen and (min-width:1024) {
     .icons {
         height: 5em;
-        padding-left:16em;
     }
 }

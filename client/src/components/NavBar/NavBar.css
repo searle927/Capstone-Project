@@ -4,21 +4,22 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 110px;
+    width: 100%;
     margin-top: 0px;
 }
 .header {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     background-color: #4F7986;
     height: 80px;
 }
 .nav {
     margin-top: 0px;
+    width: 100%
 }
-h2 {
+/* h2 {
     margin-left: 20px;
-}
+} */
 ul {
     text-decoration: none;
     color: inherit;
@@ -26,14 +27,16 @@ ul {
     list-style-type: none;
     justify-content: space-around;
 }
-
 a {
     color: black;
     text-decoration: none;
     margin-top: 0px;
 }
-a:hover {
+ a:hover {
     text-decoration: underline black;
+} 
+.myList:hover {
+    opacity:100%;
 } 
 #home.nav, #details.nav, #destination.nav, #advice.nav, #registry.nav, #rsvp.nav {
     margin-top: 0px;
@@ -125,9 +128,10 @@ a:hover {
 }
 .logo {
     font-family: 'Courgette', cursive;
-    font-size: 20px;
-    padding-left: 10px;
-    text-align: center
+    font-size: 30px;
+    padding: 0px 0px 0px 25px;
+    text-align: center;
+    margin-top: 0px;
 }
 #nav-zero.nav-items, #nav-one.nav-items, #nav-two.nav-items, #nav-three.nav-items, #nav-four.nav-items, #nav-five.nav-items{
     padding-top:0px;
@@ -138,17 +142,18 @@ a:hover {
 @media screen and (min-width:768px) {
       .header {
           display: flex;
-          justify-content: flex-start;
+          /* justify-content: flex-start; */
           width: 100vw;
       }
       .logo {
-          font-size: 23px
+          font-size: 23px;
+          padding-top: 10px
       }
       #home.nav, #details.nav, #destination.nav, #advice.nav, #registry.nav, #rsvp.nav {
         margin-top: 0px;
     }
     #nav-two.nav-items, #nav-zero.nav-items, #nav-one.nav-items, #nav-four.nav-items, #nav-five.nav-items, #nav-three.nav-items {
-        font-size: 19px;
+        font-size: 1em;
         color:  black;
     }
      .hamburger-btn {

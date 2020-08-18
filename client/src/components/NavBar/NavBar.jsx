@@ -20,7 +20,7 @@ function Navigation(props) {
     <header>
       <div className="header">
         <Link to="/" class="R+S">
-          <h1 className="logo">R+S<br /> Wedding</h1>
+          <h1 className="logo">R+S Wedding</h1>
         </Link>
         <ul className="nav">
         <Link to="/" id="home" className="nav">
