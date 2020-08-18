@@ -1,10 +1,5 @@
 .registry {
-    /* padding-top: 20vh; */
-    /* background-image: url("");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    height:113vh;
+    height: auto;
     background-color: #4F7986;
 }
 .tygifts {
@@ -16,12 +11,12 @@
     font-size: 25px;
     font-family: 'Courgette', cursive;
     font-weight: 500;
+    color:  #c9d1c8;
 }
 .registrylist{
     text-align: center;
 }
 .amazon {
-    /* height: 40px; */
     width: 130px;
     margin-bottom: 3em;
 }
@@ -31,22 +26,18 @@
     margin-bottom: 3em;
 }
 .williamssonoma {
-    /* height: 70px; */
     width: 130px;
     margin-bottom: 3em;
 }
 .crateandbarrel {
-    /* height: 40px; */
     width: 140px;
     margin-bottom: 3em;
 }
 .target {
-    /* height: 120px; */
     width: 130px;
     margin-bottom: 3em;
 }
 .nordstrom {
-    /* height: px; */
     width: 130px;
     margin-bottom: 3em;
 }
