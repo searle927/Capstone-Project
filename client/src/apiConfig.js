@@ -1,7 +1,7 @@
 let apiUrl
 const apiUrls = {
   production: '',
-  development: 'http://localhost:3000/advices'
+  development: 'https://tbd-wedding-app.herokuapp.com/advices'
 }
 
 if (window.location.hostname === 'localhost') {

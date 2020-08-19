@@ -18,7 +18,7 @@ class Advice extends Component {
 
     componentDidMount() {
 
-      fetch('http://localhost:3000/advices')
+      fetch('https://tbd-wedding-app.herokuapp.com/advices')
         .then(res => res.json())
         .then(json => {
           this.setState({
