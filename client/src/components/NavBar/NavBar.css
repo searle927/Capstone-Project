@@ -9,17 +9,15 @@
 }
 .header {
     display: flex;
-    /* justify-content: flex-start; */
     background-color: #4F7986;
     height: 80px;
+    border-bottom: solid black 1px;
 }
 .nav {
     margin-top: 0px;
     width: 100%
 }
-/* h2 {
-    margin-left: 20px;
-} */
+
 ul {
     text-decoration: none;
     color: inherit;
@@ -31,12 +29,10 @@ a {
     color: black;
     text-decoration: none;
     margin-top: 0px;
+    font-weight:bolder;
 }
  a:hover {
     text-decoration: underline black;
-} 
-.myList:hover {
-    opacity:100%;
 } 
 #home.nav, #details.nav, #destination.nav, #advice.nav, #registry.nav, #rsvp.nav {
     margin-top: 0px;
@@ -138,11 +134,9 @@ a {
 }
 
 
-  
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
       .header {
           display: flex;
-          /* justify-content: flex-start; */
           width: 100vw;
       }
       .logo {
@@ -153,17 +147,18 @@ a {
         margin-top: 0px;
     }
     #nav-two.nav-items, #nav-zero.nav-items, #nav-one.nav-items, #nav-four.nav-items, #nav-five.nav-items, #nav-three.nav-items {
-        font-size: 1em;
+        font-size: .85em;
         color:  black;
     }
      .hamburger-btn {
          visibility: hidden;
          width: 0px;
          overflow: hidden;
+         display: none;
      } 
      .nav-items {
         visibility: unset;
-        width: 100%;
+        width: auto;
         height: 100%;
         cursor: pointer;
         color: black;
@@ -181,4 +176,5 @@ a {
     }
 
 
-  } 
+  }  
+

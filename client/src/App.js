@@ -8,8 +8,7 @@ import Registry from './components/Registry/Registry';
 import RSVP from './components/RSVP/RSVP';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
-// import SendEmail from './components/RSVP/SendEmail';
-// import Bootstrap from './components/Bootstrap/Bootstrap';
+
 
 
 
@@ -43,7 +42,7 @@ const Home = () => (
     <p className="para">Dear friends and relatives,<br /><br />
     We are delighted to share in our joy with you, this amazingly beautiful and special moment of our lives, the celebration of our love!
     <br /><br />In order to prepare you for the Big Day, we have created this site whereby all information and most important tips will be shared with you. <br />
-    We will see you in Antigua!</p>
+    <br />We will see you in Antigua!</p>
   </div>
   </container>
 )

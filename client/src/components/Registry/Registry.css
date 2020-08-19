@@ -3,7 +3,7 @@
     background-color: #4F7986;
 }
 .tygifts {
-    margin: 0em 2em 2em 2em;
+    margin: 1em 2em 2em 2em;
     padding-top: 10px;
     font-size: 25px;
     font-family: 'Courgette', cursive;
@@ -14,7 +14,7 @@
     text-align: center;
 }
 .amazon {
-    width: 130px;
+    width: 150px;
     margin-bottom: 3em;
 }
 .potterybarn {
@@ -40,9 +40,13 @@
 }
 
 @media screen and (min-width:768px){
+    .registryList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .tygifts {
         font-size: 2em;
-        margin: 1em 3em;
+        margin: 1em 5em;
         text-align: center;
     }
 }

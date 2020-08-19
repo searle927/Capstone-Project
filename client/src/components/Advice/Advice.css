@@ -7,15 +7,20 @@
 .myForm {
     text-align: left;
     margin-left: 20px;
+    max-width: 960px;
+    margin: 0vw 20vw;
 }
 .myList {
     text-align: left;
-    margin: 20px 15px 0px 15px;
+    margin: 20px 15px 30px 15px;
+    margin: 4vw 20vw;
     border: solid black 2px;
-    background-color: white;
-    opacity: 70%;
+    background-color: #CBD6DA;
     border-radius: 15px;
     box-shadow: 0px 12px 18px -6px black;
+    max-width: 960px;
+    /* align-items: center; */
+    /* margin: auto; */
 }
 .advice {
     text-align: left;
@@ -27,13 +32,15 @@
     font-family: 'Courgette', cursive;
 }
 .nameBox {
-    margin-bottom: 15px;
-    width: 87.5vw;
+    width: 60vw;
+    max-width: 960px;
     border: solid black 2px;
+    margin-bottom: 35px;
 }
 .adviceBox {
     margin-bottom: 15px;
-    width: 87.5vw;
+    width: 60vw;
+    max-width: 960px;
     height: 20px;
     border: solid black 2px;
 }
@@ -67,6 +74,8 @@ h2 {
     font-weight: lighter;
     margin-top: 0px;
     padding-top: 10px;
+    font-size: 35px;
+    color: #211f30;
 }
 .adName {
     color: #211f30;

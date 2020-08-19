@@ -13,7 +13,6 @@
 }
 .icons {
     height: 5em;
-    padding-left:60px
 }
 .description {
     text-align: center;
@@ -23,6 +22,18 @@
     margin:0px;
     padding-bottom: 20px;
     color:  #c9d1c8;
+}
+.royalton {
+    color:  #f3d3b8;
+}
+.royalton:hover {
+    color: #e59d5c;
+    text-decoration: underline #e59d5c;
+}
+.gridone, .gridtwo, .gridthree {
+    border: solid transparent 3px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 @media screen and (min-width:768px) {
@@ -41,7 +52,7 @@
     }
     .icons {
         height: 5em;
-        padding: 0;
+        padding-left: 0px;
     }
 }
 

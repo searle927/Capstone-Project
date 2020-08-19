@@ -15,16 +15,16 @@ function Details() {
         </div>
             
         <div className="gridtwo">
-            <img src="https://i.imgur.com/MGBWo2t.png" 
+            <img src="https://i.imgur.com/esP2j3j.png" 
                     alt="icons" className="icons"></img>
-            <h1 className="ws">Where</h1>
-            <h3 className="description">The Royalton, Antigua and Barbuda</h3>
+            <h1 className="ws">Where</h1><br />
+            <h3 className="description">The <a className="royalton" href="https://www.royaltonresorts.com/royalton-antigua/accommodations/chairman-overwater-bungalows">Royalton</a>, Antigua and Barbuda</h3>
         </div>
       
         <div className="gridthree">
             <img src="https://i.imgur.com/qRn4tTm.png" 
             alt="icons" className="icons"></img>
-            <h1 className="ws">When</h1>
+            <h1 className="ws">When</h1><br />
             <h3 className="description">October 23rd, 2021</h3>
         </div>
             </div>
