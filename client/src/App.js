@@ -38,7 +38,7 @@ const Home = () => (
         
   <div className="wedding">
     <h1 className="title">Ryan and Shaina's Wedding</h1>
-    <h3 className="date">October 23rd, 2021 <br /> The Royalton, Antigua </h3>
+    <h3 className="date">October 15rd, 2021 <br /> Copper & Lumber, Antigua </h3>
     <p className="para">Dear friends and relatives,<br /><br />
     We are delighted to share in our joy with you, this amazingly beautiful and special moment of our lives, the celebration of our love!
     <br /><br />In order to prepare you for the Big Day, we have created this site whereby all information and most important tips will be shared with you. <br />

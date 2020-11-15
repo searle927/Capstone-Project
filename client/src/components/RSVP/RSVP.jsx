@@ -68,7 +68,7 @@ state = {
       onEdit={() => this.setState ({ showConfirm: false, errorMessage: '' })}/>
   }
 
-//Note: The following should really be its own component!!! Refractor
+
 //Render and toggle the guest list conditionally
   let rsvps;
   if (this.state.toggleRsvps === true && this.state.rsvps.length <= 0) {

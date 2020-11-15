@@ -10,7 +10,6 @@ class Advice extends Component {
       this.state={
         title: 'Send all your marriage and wedding advice here!',
         act: 0,
-        // index: '',
         datas: [],
         isLoaded: false,
       }
@@ -27,10 +26,7 @@ class Advice extends Component {
           })
         });
     }
-  
-    // componentDidMount(){
-    //   this.refs.name.focus();
-    // }
+
   
     Submit = (e) =>{
       e.preventDefault();

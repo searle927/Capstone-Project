@@ -1,18 +1,6 @@
 import React from 'react';
 import Email from './Email';
-import * as emailjs from 'emailjs-com';
 
-
-// function SendEmail(e) {
-//   e.preventDefault();
-
-//   emailjs.sendForm('gmail', 'rsvp_template', e.target, 'user_wmCofciMoExJ8lhZagefO')
-//     .then((result) => {
-//         console.log(result.text);
-//     }, (error) => {
-//         console.log(error.text);
-//     });
-// }
 
 
 class Form extends React.Component {
@@ -36,10 +24,8 @@ class Form extends React.Component {
   return (
   <div>
   <p>{this.props.errorMessage}</p>
-
   {/* Form */}
    <form className="form">    
-
   {/* Enter Name Textfield */}
       <label>
       Name:
@@ -50,8 +36,6 @@ class Form extends React.Component {
          onChange={e => this.setState({ name: e.target.value})}/>
       </label>
         <br /><br />
-
-
 
     <Email /><br />
 
