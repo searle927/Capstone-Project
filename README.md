@@ -3,9 +3,7 @@ A full-stack wedding website. Allowing the guest to interact with the bride and 
 
 ## LIVE LINKS:
 
-font-end link:
-
-back-end link:
+Project link: http://fragile-shirt.surge.sh/
 
 ## GITHUB LINKS:
 
@@ -19,7 +17,7 @@ I recently got engaged and found out I'd need a wedding website, so I figured wh
 ## Wireframes
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app
 
-- [Desktop WireFrames:] (https://i.imgur.com/dD9pUMr.jpg) (https://i.imgur.com/bimD4Ul.jpg) (https://i.imgur.com/nHP4bee.jpg)
+- (https://i.imgur.com/dD9pUMr.jpg) (https://i.imgur.com/bimD4Ul.jpg) (https://i.imgur.com/nHP4bee.jpg)
 - [Mobile Wireframes:]
 
 
@@ -59,18 +57,18 @@ Time frames are also key in the development cycle.  You have limited time to cod
 MVP 
 Component |	Priority	| Estimated Time | Time Invested
 | --- | :---: |  :---: | :---: |
-Database structure planning |	H	| 2		
-Spin up Rails server |	H	| 1		
-Create seed data for Blog Portion	| H	| 2			
-Set up CRUD routes	| H	| 4		
-Set up admin and user routes	| H	| 4		
-Deploy server on heroku	| H	| 3		
-Setting Up React and Components | H | 1
-React Framework | H | 10
-CSS & Styling | H | 15
-NavBar & Footer | H | 2
-Media Queries | H | 10
-Total | H | 54
+Database structure planning |	H	| 2	| 2
+Spin up Rails server |	H	| 1		| 1
+Create seed data for Blog Portion	| H	| 2	| 1
+Set up CRUD routes	| H	| 4	| 2.5
+Set up admin and user routes	| H	| 4	| -
+Deploy server on heroku	| H	| 3		| 5
+Setting Up React and Components | H | 1 | 1
+React Framework | H | 10 | 12
+CSS & Styling | H | 15 | 17
+NavBar & Footer | H | 2 | 1.5
+Media Queries | H | 10 | 10
+Total | H | 54 | 53
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
